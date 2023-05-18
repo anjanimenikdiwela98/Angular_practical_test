@@ -13,17 +13,17 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label for="productType">Product Type:</label>
+                        <label for="firstName">First Name <span>*</span></label>
                         <div class="form-input">
-                            <input id="productType" type="text" value="Unit Trust" placeholder="Unit Trust" />
+                            <input id="firstName" type="text" value="" placeholder="First Name" required/>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label for="productType">Product Type:</label>
+                        <label for="lastName">Last Name <span>*</span></label>
                         <div class="form-input">
-                            <input id="productType" type="text" value="Unit Trust" placeholder="Unit Trust" />
+                            <input id="lastName" type="text" value="" placeholder="Last Name" required/>
                         </div>
                     </div>
                 </div>
@@ -31,36 +31,33 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label>To Date</label>
+                        <label>Birthday</label>
                         <div class="form-input">
-                            <input id="toDatePAOR" type="date" />
+                            <input id="birthday" type="date" />
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label for="productType">Product Type:</label>
-                        <ng-select placeholder="Select Reference Number" name="referenceNumber"
-                            [items]="referenceNumberIDPendingList" bindLabel="referenceId" bindValue="referenceId"
-                            required>
+                        <label for="gender">Gender</label>
+                        <ng-select placeholder="Select Gender" name="gender"
+                            [items]="gender" bindLabel="gender" bindValue="gender">
                         </ng-select>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label for="productType">Product Type:</label>
-                        <ng-select placeholder="Select Reference Number" name="referenceNumber"
-                            [items]="referenceNumberIDPendingList" bindLabel="referenceId" bindValue="referenceId"
-                            required>
+                        <label for="civilStatus">Civil Status</label>
+                        <ng-select placeholder="Select Civil Status" name="civilStatus"
+                            [items]="civilStatus" bindLabel="civilStatus" bindValue="civilStatus">
                         </ng-select>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label for="productType">Product Type:</label>
-                        <ng-select placeholder="Select Reference Number" name="referenceNumber"
-                            [items]="referenceNumberIDPendingList" bindLabel="referenceId" bindValue="referenceId"
-                            required>
+                        <label for="nationality">Nationality</label>
+                        <ng-select placeholder="Select Nationality" name="nationality"
+                            [items]="nationality" bindLabel="nationality" bindValue="nationality">
                         </ng-select>
                     </div>
                 </div>
@@ -74,17 +71,17 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label for="productType">Product Type:</label>
+                        <label for="phoneNumber">Phone Number</label>
                         <div class="form-input">
-                            <input id="productType" type="text" value="Unit Trust" placeholder="Unit Trust" />
+                            <input id="phoneNumber" type="text" value="" placeholder="Phone Number" />
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label for="productType">Product Type:</label>
+                        <label for="emailAddress">Email Address</label>
                         <div class="form-input">
-                            <input id="productType" type="text" value="Unit Trust" placeholder="Unit Trust" />
+                            <input id="emailAddress" type="text" value="" placeholder="Email Address" />
                         </div>
                     </div>
                 </div>
@@ -92,34 +89,33 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label for="productType">Product Type:</label>
+                        <label for="address">Address</label>
                         <div class="form-input">
-                            <input id="productType" type="text" value="Unit Trust" placeholder="Unit Trust" />
+                            <input id="address" type="text" value="" placeholder="Address" />
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label for="productType">Product Type:</label>
+                        <label for="city">City</label>
                         <div class="form-input">
-                            <input id="productType" type="text" value="Unit Trust" placeholder="Unit Trust" />
+                            <input id="city" type="text" value="" placeholder="City" />
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label for="productType">Product Type:</label>
+                        <label for="zipCode">Zip Code</label>
                         <div class="form-input">
-                            <input id="productType" type="text" value="Unit Trust" placeholder="Unit Trust" />
+                            <input id="zipCode" type="text" value="" placeholder="Zip Code" />
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label for="productType">Product Type:</label>
-                        <ng-select placeholder="Select Reference Number" name="referenceNumber"
-                            [items]="referenceNumberIDPendingList" bindLabel="referenceId" bindValue="referenceId"
-                            required>
+                        <label for="country">Country</label>
+                        <ng-select placeholder="Select Country" name="country"
+                            [items]="country" bindLabel="country" bindValue="country">
                         </ng-select>
                     </div>
                 </div>

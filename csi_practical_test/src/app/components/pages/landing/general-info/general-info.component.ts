@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GeneralInfoComponent implements OnInit {
 
-  referenceNumberIDPendingList:any = [123,2546,478,125]
+  gender:string[] = ['Male','Female']
+  civilStatus:string[] = ['Married','Single']
+  nationality:string[] = ['Sri Lankan', 'American','British','French']
+  country:string[] = ['Sri Lanka', 'USA', 'UK', 'France']
   constructor() { }
 
   ngOnInit(): void {
