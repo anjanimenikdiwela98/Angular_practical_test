@@ -1,35 +1,29 @@
 <header>
-    <div class="header-left-side">
-      <div class="header-logo">
-        <a href="">
-          <img src="assets/images/logo-colored.webp" alt="CSI Logo">
-        </a>
-      </div>
+  <div class="header-left-side">
+    <div class="header-logo">
+      <a href="">
+        <img src="assets/images/logo-colored.webp" alt="CSI Logo">
+      </a>
     </div>
-  
-    <div class="header-right-side">
-      <div class="notification">
-        <!-- <i class="icon icon-notification"></i> -->
-      </div>
-      <div class="profile-info">
-        <div class="profile-details">
-          <div class="name">
-            <h6><b><span class="red-content">Hello </span></b></h6>
-          </div>
-        </div>
+  </div>
 
-        <!-- <div #dropdownBtn class="drop-arrow" (click)="toggleClass()">
-          <i class="icon icon-chevron-up" [ngClass]="isClicked ? 'up' : 'down'"></i>
-          <div #dropdownOptions class="dropdown-options" [ngClass]="{show: isClicked}">
-            <button>Change Password</button>
-            <hr>
-            <div>
-              <button (click)="logout()">Logout<i class="icon icon-log-out"></i></button>
-            </div>
-          </div>
-        </div> -->
+  <div class="header-right-side">
+    <!-- Search form -->
+    <form>
+      <div class="md-form search">
+        <i class="icon icon-search"></i>
+        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
       </div>
+    </form>
+    <div class="notification">
+      <i class="icon icon-bell"></i>    
     </div>
-  
-  </header>
-  
+    <div class="menu">
+      <i class="icon icon-apps"></i>
+    </div>
+    <div class="profile-img">
+      <img src="assets/images/blank-profile-picture.webp" alt="Profile pic">
+    </div>
+  </div>
+
+</header>

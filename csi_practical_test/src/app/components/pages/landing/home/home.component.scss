@@ -1,12 +1,21 @@
 @import 'src/assets/scss/variables';
-@import 'src/assets/scss/buttons';
 @import 'src/assets/scss/prefix';
 
-.landing-pg-container{
+.home-pg-container{
     min-height: calc(100vh - 73px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // gap: 15px;
+    gap: 15px;
+    .welcome-msg{
+        @extend .h2-roboto-—-26pt-;
+        &.company-name{
+            color: $danger;
+        }
+    }
+    .button{
+        @extend .h5-roboto-—-16pt-;
+        color: $white;
+    }
 }

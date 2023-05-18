@@ -26,16 +26,4 @@
     background-color: transparent;
     border: 1px solid $primary-400;
   }
-
-  &:disabled {
-    background-color: $gray-300 !important;
-    background: none;
-    color: $white;
-    border-color: $gray-300;
-    cursor: default;
-  }
-
-  &.full-width {
-    width: 100%;
-  }
 }

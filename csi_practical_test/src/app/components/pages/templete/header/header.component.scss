@@ -1,4 +1,5 @@
 @import 'src/assets/scss/variables';
+@import 'src/assets/scss/prefix';
 
 header {
   position: relative;
@@ -16,95 +17,70 @@ header {
     display: flex;
     gap: 22px;
     padding: 0px 12px;
+    .header-logo {
+      margin-left: 24px;
+  
+      img {
+        height: 52px;
+        margin: 5px auto;
+      }
+    }
   }
 
   .header-right-side {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-
-  .header-logo {
-    margin-left: 24px;
-
-    img {
-      height: 52px;
-      margin: 5px auto;
-    }
-  }
-
-  .profile-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .profile-details {
-    text-align: right;
-    font-family: rFont;
-    color: $black;
-    padding: 4px 10px;
-    margin-top: 4px;
-
-    h6 {
-      margin-bottom: 0;
-      font-size: 16px;
-      margin-bottom: 4px;
-      font-family: lFont;
-
-      b {
-        font-family: boFont;
+    .search{
+      position: relative;
+      margin-right: 4px;
+      i{
+        position: absolute;
+        color: $primary-300;
+        right: 15px;
+        top: 7px;
+        cursor: pointer;
+      }
+      .form-control{
+        @extend .regular-roboto-—-14pt-;
+        border: 1px solid $gray-200;
+        border-radius: 4px;
+        width: 250px;
       }
     }
-
-    p {
-      margin-bottom: 0;
-      font-size: 14px;
+    .profile-img {
+      position: relative;
+      border-radius: 50%;
+      margin-right: 15px;
+      cursor: pointer;
+  
+      img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+      }
     }
-
-  }
-
-  .red-content {
-    color: $primary-600;
-  }
-
-  .profile-img {
-    position: relative;
-    width: 52px;
-    height: 52px;
-    background-color: $gray-200;
-    border-radius: 64px;
-    margin-right: 15px;
-    cursor: pointer;
-
-    img {
-      width: 52px;
-      height: 52px;
-      border-radius: 64px;
-
-    }
-  }
-
-  .notification {
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    border-radius: 8px;
-    width: 50px;
-    height: 50px;
-    padding: 6px 11px 3px 11px;
-    color: $primary-600;
-    cursor: pointer;
-
-    i {
-      font-size: 28px;
-    }
-
-    &:hover {
-      background-color: $gray-200;
+  
+    .notification,.menu {
+      display: flex;
+      align-items: center;
+      border-radius: 8px;
+      width: 50px;
+      height: 50px;
+      padding: 7px 7px 3px 12px;
+      color: $primary-600;
+      margin: auto 3px;
+      cursor: pointer;
+  
+      i {
+        font-size: 24px;
+      }
+      &:hover {
+        background-color: $gray-100;
+      }
     }
   }
+
 }
-
 
 

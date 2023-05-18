@@ -1,4 +1,6 @@
 @import 'variables';
+@import 'prefix';
+
 
 .form-group {
   margin-bottom: 24px;
@@ -6,18 +8,6 @@
   label {
     @extend .h6-roboto-—-14pt-;
     color: $gray-600;
-
-    button.info {
-      background: none;
-      border: none;
-      font-size: 24px;
-      cursor: pointer;
-
-      i {
-        vertical-align: middle;
-        color: $primary-600;
-      }
-    }
     span{
       @extend .h6-roboto-—-14pt-;
       color: $danger !important;
@@ -30,14 +20,9 @@
 
   .ng-select .ng-select-container {
     border-radius: 4px;
-    border: 1px solid #9C9C9C;
+    border: 1px solid $gray-300;
   }
   .form-input {
-
-    .alert {
-      margin-top: 4px;
-    }
-
     input {
       position: relative;
       width: 100%;
@@ -52,24 +37,6 @@
         cursor: default;
       }
     }
-
-    &.datepicker-input {
-      input {
-        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5LjIgMjEuMUg1QzMuOSAyMS4xIDMgMjAuMiAzIDE5LjFWNy4wOTk5OEMzIDUuOTk5OTggMy45IDUuMDk5OTggNSA1LjA5OTk4SDE5LjJDMjAuMyA1LjA5OTk4IDIxLjIgNS45OTk5OCAyMS4yIDcuMDk5OThWMTkuMkMyMS4yIDIwLjIgMjAuMyAyMS4xIDE5LjIgMjEuMVpNNSA3LjA5OTk4VjE5LjJIMTkuMlY3LjA5OTk4SDVaIiBmaWxsPSIjMjMyMzIzIi8+CjxwYXRoIGQ9Ik0xNyAzSDE1VjUuMDk3NjZIMTdWM1oiIGZpbGw9IiMyMzIzMjMiLz4KPHBhdGggZD0iTTkgM0g3VjUuMDk3NjZIOVYzWiIgZmlsbD0iIzIzMjMyMyIvPgo8cGF0aCBkPSJNOSAxMEg3VjEySDlWMTBaIiBmaWxsPSIjMjMyMzIzIi8+CjxwYXRoIGQ9Ik0xMyAxMEgxMVYxMkgxM1YxMFoiIGZpbGw9IiMyMzIzMjMiLz4KPHBhdGggZD0iTTE3IDEwSDE1VjEySDE3VjEwWiIgZmlsbD0iIzIzMjMyMyIvPgo8cGF0aCBkPSJNOSAxNC4xSDdWMTYuMUg5VjE0LjFaIiBmaWxsPSIjMjMyMzIzIi8+CjxwYXRoIGQ9Ik0xMyAxNC4xSDExVjE2LjFIMTNWMTQuMVoiIGZpbGw9IiMyMzIzMjMiLz4KPHBhdGggZD0iTTE3IDE0SDE1VjE2SDE3VjE0WiIgZmlsbD0iIzIzMjMyMyIvPgo8L3N2Zz4K");
-        background-repeat: no-repeat;
-        background-position-x: calc(100% - 8px);
-        background-position-y: 8px;
-        @extend .regular-roboto-—-14pt-;
-
-        &:disabled {
-          border-color: #d7d7d7;
-          color: #9c9c9c;
-          cursor: default;
-        }
-      }
-    }
-
   }
-
 }
 
