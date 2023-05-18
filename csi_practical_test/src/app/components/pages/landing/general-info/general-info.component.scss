@@ -1,5 +1,5 @@
 @import 'src/assets/scss/variables';
-@import 'src/assets/scss/form';
+@import 'src/assets/scss/prefix';
 .page-container {
     min-height: calc(100vh - 73px);
     padding: 32px;
@@ -7,6 +7,7 @@
     .page-title {
         color: $primary-900 ;
         margin-bottom: 32px;
+        @extend .h3-roboto-—-22pt-;
         h5 {
           margin: 0;
           padding: 0;
@@ -26,9 +27,9 @@
             background-color: $white;
             position: absolute;
             top: -14px;
-            color: $primary-900;
+            @extend .h4-roboto-—-18pt-;
             z-index: 2;
-            width: 164px;
+            width: 184px;
             text-align: center;
         }
     }

@@ -1,4 +1,7 @@
 @import 'src/assets/scss/variables';
+@import 'src/assets/scss/buttons';
+@import 'src/assets/scss/prefix';
+
 .landing-pg-container{
     min-height: calc(100vh - 73px);
     display: flex;

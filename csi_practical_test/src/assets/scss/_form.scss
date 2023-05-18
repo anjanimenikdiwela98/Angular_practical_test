@@ -4,8 +4,7 @@
   margin-bottom: 24px;
 
   label {
-    font-family: rFont;
-    font-size: 14px;
+    @extend .h6-roboto-—-14pt-;
     color: $gray-600;
 
     button.info {
@@ -52,6 +51,9 @@
     border: 1px solid #9C9C9C;
   }
 
+  input{
+    @extend .regular-roboto-—-14pt-;
+  }
   .form-input {
 
     // @include mq("phone", max) {
@@ -66,16 +68,9 @@
       position: relative;
       width: 100%;
       padding: 8px 12px;
-      font-family: rFont;
-      font-size: 16px;
-      color: $gray-600;
+      @extend .regular-roboto-—-14pt-;
       border-radius: 4px;
       border: 1px solid $gray-300;
-
-      // @include mq("phone", max) {
-      //   width: 100%;
-      // }
-
       &:disabled {
         border-color: #d7d7d7;
         color: #9c9c9c;
@@ -88,16 +83,9 @@
       position: relative;
       width: 100%;
       padding: 8px 12px;
-      font-family: rFont;
-      font-size: 16px;
-      color: $gray-600;
+      @extend .regular-roboto-—-14pt-;
       border-radius: 4px;
       border: 1px solid $gray-300;
-
-      // @include mq("phone", max) {
-      //   width: 100%;
-      // }
-
       &:disabled {
         border-color: #d7d7d7;
         color: #9c9c9c;
@@ -105,29 +93,13 @@
       }
     }
 
-    // &.with-prefix {
-    //   position: relative;
-
-    //   .prefix {
-    //     position: absolute;
-    //     top: 8px;
-    //     left: 36px;
-    //     color: $gray-300;
-    //     z-index: 1;
-
-    //   }
-
-    //   input {
-    //     padding-left: 44px;
-    //   }
-    // }
-
     &.datepicker-input {
       input {
         background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5LjIgMjEuMUg1QzMuOSAyMS4xIDMgMjAuMiAzIDE5LjFWNy4wOTk5OEMzIDUuOTk5OTggMy45IDUuMDk5OTggNSA1LjA5OTk4SDE5LjJDMjAuMyA1LjA5OTk4IDIxLjIgNS45OTk5OCAyMS4yIDcuMDk5OThWMTkuMkMyMS4yIDIwLjIgMjAuMyAyMS4xIDE5LjIgMjEuMVpNNSA3LjA5OTk4VjE5LjJIMTkuMlY3LjA5OTk4SDVaIiBmaWxsPSIjMjMyMzIzIi8+CjxwYXRoIGQ9Ik0xNyAzSDE1VjUuMDk3NjZIMTdWM1oiIGZpbGw9IiMyMzIzMjMiLz4KPHBhdGggZD0iTTkgM0g3VjUuMDk3NjZIOVYzWiIgZmlsbD0iIzIzMjMyMyIvPgo8cGF0aCBkPSJNOSAxMEg3VjEySDlWMTBaIiBmaWxsPSIjMjMyMzIzIi8+CjxwYXRoIGQ9Ik0xMyAxMEgxMVYxMkgxM1YxMFoiIGZpbGw9IiMyMzIzMjMiLz4KPHBhdGggZD0iTTE3IDEwSDE1VjEySDE3VjEwWiIgZmlsbD0iIzIzMjMyMyIvPgo8cGF0aCBkPSJNOSAxNC4xSDdWMTYuMUg5VjE0LjFaIiBmaWxsPSIjMjMyMzIzIi8+CjxwYXRoIGQ9Ik0xMyAxNC4xSDExVjE2LjFIMTNWMTQuMVoiIGZpbGw9IiMyMzIzMjMiLz4KPHBhdGggZD0iTTE3IDE0SDE1VjE2SDE3VjE0WiIgZmlsbD0iIzIzMjMyMyIvPgo8L3N2Zz4K");
         background-repeat: no-repeat;
         background-position-x: calc(100% - 8px);
         background-position-y: 8px;
+        @extend .regular-roboto-—-14pt-;
 
         &:disabled {
           border-color: #d7d7d7;
@@ -139,401 +111,5 @@
 
   }
 
-  .form-selectbox {
-    select {
-      position: relative;
-      width: 100%;
-      padding: 8px 32px 8px 12px;
-      font-family: rFont;
-      font-size: 16px;
-      color: $gray-600;
-      border-radius: 4px;
-      -moz-appearance: none;
-      /* Firefox */
-      -webkit-appearance: none;
-      /* Safari and Chrome */
-      appearance: none;
-      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDEzLjE3MkwxNi45NSA4LjIyMjA1TDE4LjM2NCA5LjYzNjA1TDEyIDE2TDUuNjM2IDkuNjM2MDVMNy4wNSA4LjIyMjA1TDEyIDEzLjE3MloiIGZpbGw9IiMyMzIzMjMiLz4KPC9zdmc+Cg==");
-      background-repeat: no-repeat;
-      background-position-x: calc(100% - 8px);
-      background-position-y: 5px;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-
-      // @include mq("phone", max) {
-      //   width: 100%;
-      // }
-
-      &:disabled {
-        background: #eeeeee;
-        border-color: #d7d7d7;
-        color: #9c9c9c;
-        cursor: default;
-      }
-    }
-
-    .select-box {
-      width: 100%;
-      position: relative;
-
-      // @include mq("phone", max) {
-      //   padding-left: 8px;
-      //   width: 100%;
-      // }
-
-      .ng-select {
-        color: $gray-600;
-        font-family: rFont;
-        font-size: 16px;
-
-        .ng-arrow-wrapper .ng-arrow {
-          border: none !important;
-          background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDEzLjE3MkwxNi45NSA4LjIyMjA1TDE4LjM2NCA5LjYzNjA1TDEyIDE2TDUuNjM2IDkuNjM2MDVMNy4wNSA4LjIyMjA1TDEyIDEzLjE3MloiIGZpbGw9IiMyMzIzMjMiLz4KPC9zdmc+Cg==");
-          background-repeat: no-repeat;
-          // background-position-x: calc(100% - 8px);
-          // background-position-y: 5px;
-          width: 24px;
-          height: 24px;
-        }
-
-        &.ng-select-opened>.ng-select-container .ng-arrow {
-          transform: rotateX(180deg);
-        }
-
-        .ng-arrow-wrapper {
-          margin-right: 7px;
-          padding-top: 4px;
-        }
-
-        .ng-select-container {
-          border-color: $gray-300;
-          height: 44px;
-        }
-
-        .ng-dropdown-panel {
-          border-color: $gray-300;
-        }
-      }
-    }
-  }
 }
 
-// Radio and Checkbox design start
-
-.form-group {
-  .vertical-checkbox-list {
-    margin-left: 26px;
-    margin-top: 8px;
-
-    // @include mq("phone", max) {
-    //   margin-left: 8px;
-    // }
-  }
-
-  .horizontal-checkbox-list {
-    width: 100%;
-    display: inline-block;
-
-    // @include mq("phone", max) {
-    //   margin-right: 8px;
-    // }
-
-    label.checkbox-container {
-      float: left;
-      margin-right: 36px;
-
-      // @include mq("phone", max) {
-      //   margin-right: 28px;
-      // }
-    }
-  }
-
-  // CheckBox styles
-  /* The container */
-  .checkbox-container {
-    display: block;
-    position: relative;
-    padding-left: 28px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-family: rFont;
-    font-size: 14px;
-    color: $gray-600;
-  }
-
-  /* Hide the browser's default checkbox */
-  .checkbox-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-
-  /* Create a custom checkbox */
-  .checkboxmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: $white;
-    border-radius: 4px;
-    border: 1px solid $primary-600;
-  }
-
-  /* On mouse-over, add a grey background color */
-  .checkbox-container:hover input~.checkboxmark {
-    background-color: $gray-300;
-  }
-
-  .checkbox-container input:disabled~.checkboxmark {
-    background-color: $white;
-    border-color: $gray-300 !important;
-  }
-
-  .checkbox-container input:disabled+span {
-    color: $gray-300;
-    cursor: default;
-  }
-
-  .checkbox-container input:disabled~span {
-    color: $gray-300;
-    cursor: default;
-  }
-
-  /* When the checkbox is checked, add a blue background */
-  .checkbox-container input:checked~.checkboxmark {
-    background-color: $primary-600;
-  }
-
-  .checkbox-container input:checked:disabled~.checkboxmark {
-    background-color: #b4b4b4;
-    cursor: default;
-  }
-
-  /* Create the checkboxmark/indicator (hidden when not checked) */
-  .checkboxmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-
-  /* Show the checkboxmark when checked */
-  .checkbox-container input:checked~.checkboxmark:after {
-    display: block;
-  }
-
-  /* Style the checkboxmark/indicator */
-  .checkbox-container .checkboxmark:after {
-    top: 3px;
-    left: 7px;
-    width: 5px;
-    height: 10px;
-    border: solid $white;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
-  // Radio Button styles
-  .vertical-radio-btn-list {
-    margin-bottom: 24px;
-
-    label.radio-container {
-      margin-bottom: 16px;
-    }
-  }
-
-  .horizontal-radio-btn-list {
-    width: 100%;
-    display: inline-block;
-
-    // @include mq("phone", max) {
-    //   margin-left: 8px;
-    // }
-
-    label.radio-container {
-      float: left;
-      margin-right: 36px;
-
-      // @include mq("phone", max) {
-      //   margin-right: 28px;
-      // }
-    }
-  }
-
-  /* The container */
-  label.radio-container {
-    display: block;
-    position: relative;
-    padding-left: 28px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-family: rFont;
-    font-size: 14px;
-    color: $gray-600;
-  }
-
-  /* Hide the browser's default radio button */
-  .radio-container input {
-    position: absolute;
-    bottom: 2px;
-    opacity: 0;
-    cursor: pointer;
-  }
-
-  /* Create a custom radio button */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 18px;
-    width: 18px;
-    background-color: $white;
-    border-radius: 50%;
-    border: 1px solid $gray-600;
-  }
-
-  .radio-container input:disabled~.checkmark {
-    background-color: $white;
-    border: 1px solid $gray-300;
-    cursor: default;
-  }
-
-  /* On mouse-over, add a grey background color */
-  .radio-container:hover input~.checkmark {
-    background-color: $gray-300;
-  }
-
-  .radio-container:hover input:disabled~.checkmark {
-    background-color: $white;
-    cursor: default;
-  }
-
-  /* When the radio button is checked, add a blue background */
-  .radio-container input:checked~.checkmark {
-    background-color: $white;
-    border-width: 2px solid $primary-300;
-  }
-
-  .radio-container input:checked:disabled~.checkmark {
-    border: 1px solid $gray-300;
-    cursor: default;
-  }
-
-  .radio-container input:disabled~span {
-    color: $gray-300;
-    cursor: default;
-  }
-
-  .radio-container input:checked~span {
-    font-family: boFont;
-    font-size: 14px;
-  }
-
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-
-  /* Show the indicator (dot/circle) when checked */
-  .radio-container input:checked~.checkmark:after {
-    display: block;
-  }
-
-  .radio-container input:checked:disabled~.checkmark:after {
-    background-color: #b6b6b6;
-    cursor: default;
-  }
-
-  /* Style the indicator (dot/circle) */
-  .radio-container .checkmark:after {
-    top: 2.5px;
-    left: 2.5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: $primary-300;
-  }
-}
-
-// toggle switch
-.switch-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-
-  p {
-    margin-bottom: 0;
-  }
-
-  /* The switch - the box around the slider */
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 30px;
-  }
-
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $gray-300;
-    -webkit-transition: .3s;
-    transition: .3s;
-    border-radius: 28px;
-  }
-
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 22px;
-    width: 22px;
-    left: 4px;
-    bottom: 4px;
-    background-color: $white;
-    -webkit-transition: .3s;
-    transition: .3s;
-    border-radius: 50%;
-  }
-
-  input:checked+.slider {
-    background-color: $primary-600;
-  }
-
-  input:focus+.slider {
-    box-shadow: 0 0 1px $gray-300;
-  }
-
-  input:checked+.slider:before {
-    -webkit-transform: translateX(20px);
-    -ms-transform: translateX(20px);
-    transform: translateX(20px);
-  }
-}

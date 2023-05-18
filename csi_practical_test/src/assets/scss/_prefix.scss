@@ -1,0 +1,84 @@
+@import 'src/assets/scss/variables';
+  /* Font/text values */
+  $font-family-roboto: Roboto;
+  $font-style-normal: normal;
+  $font-weight-medium: medium;
+  $font-weight-regular: lighter;
+  $font-weight-bold: bold;
+  $font-size-14: 14px;
+  $font-size-16: 16px;
+  $font-size-18: 18px;
+  $font-size-22: 22px;
+  $font-size-26: 26px;
+  $font-size-28: 28px;
+  $character-spacing-0: 0px;
+  $line-spacing-20: 20px;
+  $line-spacing-22: 22px;
+  $line-spacing-24: 24px;
+  $line-spacing-32: 32px;
+  $line-spacing-36: 36px;
+  $line-spacing-40: 40px;
+
+  
+  /* Character Styles */
+  .h1-roboto-—-28pt- {
+  font-family:  $font-family-roboto ;
+  font-style:  $font-style-normal ;
+  font-weight:  $font-weight-bold ;
+  font-size:  $font-size-28 ;
+  line-height:  $line-spacing-40 ;
+  letter-spacing:  $character-spacing-0 ;
+  color:  $primary-900 ;
+  }
+  .h2-roboto-—-26pt- {
+  font-family:  $font-family-roboto ;
+  font-style:  $font-style-normal ;
+  font-weight:  $font-weight-medium ;
+  font-size:  $font-size-26 ;
+  line-height:  $line-spacing-36 ;
+  letter-spacing:  $character-spacing-0 ;
+  color:  $primary-900 ;
+  }
+  .h3-roboto-—-22pt- {
+  font-family:  $font-family-roboto ;
+  font-style:  $font-style-normal ;
+  font-weight:  $font-weight-medium ;
+  font-size:  $font-size-22 ;
+  line-height:  $line-spacing-32 ;
+  letter-spacing:  $character-spacing-0 ;
+  color:  $primary-900 ;
+  }
+  .h4-roboto-—-18pt- {
+  font-family:  $font-family-roboto ;
+  font-style:  $font-style-normal ;
+  font-weight:  $font-weight-medium ;
+  font-size:  $font-size-18 ;
+  line-height:  $line-spacing-24 ;
+  letter-spacing:  $character-spacing-0 ;
+  color:   $primary-900 ;
+  }
+  .h5-roboto-—-16pt- {
+  font-family:  $font-family-roboto ;
+  font-style:  $font-style-normal ;
+  font-weight:  $font-weight-medium ;
+  font-size:  $font-size-16 ;
+  line-height:  $line-spacing-22 ;
+  letter-spacing:  $character-spacing-0 ;
+  color:   $primary-900 ;
+  }
+  .h6-roboto-—-14pt- {
+    font-family:  $font-family-roboto ;
+    font-style:  $font-style-normal ;
+    font-weight:  $font-weight-medium ;
+    font-size:  $font-size-14 ;
+    line-height:  $line-spacing-20 ;
+    letter-spacing:  $character-spacing-0 ;
+    color:  $primary-900 ;
+  }
+  .regular-roboto-—-14pt- {
+    font-family:  $font-family-roboto ;
+    font-style:  $font-style-normal ;
+    font-weight:  $font-weight-regular ;
+    font-size:  $font-size-14 ;
+    color:  $gray-600 ;
+  }
