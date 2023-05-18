@@ -5,7 +5,7 @@
     padding: 32px;
     margin: auto;
     .page-title {
-        color: #3B444F ;
+        color: $primary-900 ;
         margin-bottom: 32px;
         h5 {
           margin: 0;
@@ -18,15 +18,15 @@
     }
     .box{
         position: relative;
-        border: 1px solid #CBD1D6;
+        border: 1px solid $primary-100;
         padding: 32px 24px;
         border-radius: 4px;
         margin-bottom: 25px;
         .box-title {
-            background-color: white;
+            background-color: $white;
             position: absolute;
             top: -14px;
-            color: #3B444F;
+            color: $primary-900;
             z-index: 2;
             width: 164px;
             text-align: center;
