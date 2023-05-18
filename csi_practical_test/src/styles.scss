@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'assets/scss/variables';
+@import 'assets/scss/form';
+@import 'assets/scss/buttons';
+
+
+@import '~bootstrap/scss/bootstrap';
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
